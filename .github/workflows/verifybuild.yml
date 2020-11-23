@@ -3,7 +3,7 @@ name: Verify build with gradle
 on: [push, pull_request]
 
 jobs:
-  build:
+  build: mavenCentral()
     # will have android sdk installed, see https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu1804-README.md look for android, 29.0.2 is there woop
     runs-on: ubuntu-latest
     steps:
